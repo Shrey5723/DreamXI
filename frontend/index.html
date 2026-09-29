@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DreamXI — Multi-Constraint Team Optimizer & BST Leaderboard</title>
+  <meta name="description" content="Dream11-style fantasy sports team optimizer demonstrating advanced DAA algorithms: Multi-constraint Knapsack DP, Greedy Heuristic, Augmented Treap BST, Binary Heap, and DSU.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Header / Navigation -->
+  <header class="app-header">
+    <div class="header-container">
+      <div class="brand">
+        <div class="brand-logo">
+          <span class="brand-icon">⚡</span>
+          <div class="logo-glow"></div>
+        </div>
+        <div>
+          <div class="brand-title">Dream<span class="accent-text">XI</span> <span class="tag-version">DAA Engine</span></div>
+          <div class="brand-subtitle">Multi-Constraint Team Optimizer • Order-Statistic Tree Leaderboard</div>
+        </div>
+      </div>
+
+      <nav class="nav-tabs" role="tablist">
+        <button class="nav-tab active" data-tab="build-team" id="tab-build-team" role="tab">
+          <span class="tab-icon">⚔️</span> Team Optimizer
+        </button>
+        <button class="nav-tab" data-tab="player-pool" id="tab-player-pool" role="tab">
+          <span class="tab-icon">👥</span> Player Pool
+        </button>
+        <button class="nav-tab" data-tab="leaderboard" id="tab-leaderboard" role="tab">
+          <span class="tab-icon">🏆</span> BST Leaderboard
+        </button>
+        <button class="nav-tab" data-tab="trending" id="tab-trending" role="tab">
+          <span class="tab-icon">🔥</span> Heap Trending
+        </button>
+        <button class="nav-tab" data-tab="leagues" id="tab-leagues" role="tab">
+          <span class="tab-icon">🛡️</span> DSU Leagues
+        </button>
+        <button class="nav-tab" data-tab="benchmark" id="tab-benchmark" role="tab">
+          <span class="tab-icon">📊</span> Complexity Benchmark
+        </button>
+      </nav>
+
+      <div class="header-status">
+        <span class="status-indicator"></span>
+        <span class="status-text">Backend Active</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- Algorithmic Pills Bar -->
+  <section class="algo-bar">
+    <div class="algo-pill"><span class="algo-name">Team Selection:</span> 0/1 Knapsack DP vs Greedy Ratio</div>
+    <div class="algo-pill"><span class="algo-name">Leaderboard:</span> Custom Augmented Treap O(log N)</div>
+    <div class="algo-pill"><span class="algo-name">Trending:</span> Binary Min-Heap O(N log K)</div>
+    <div class="algo-pill"><span class="algo-name">Friend Leagues:</span> DSU with Path Compression O(α(N))</div>
+  </section>
+
+  <!-- Main Content Container -->
+  <main class="main-content">
+    
+    <!-- ==================== TAB 1: BUILD TEAM (OPTIMIZER) ==================== -->
+    <section id="pane-build-team" class="tab-pane active">
+      <div class="pane-header">
+        <div>
+          <h1 class="pane-title">Team Selection: DP Knapsack vs. Greedy Heuristic</h1>
+          <p class="pane-desc">Select 11 players within 100 credits: 1-4 WKs, 3-6 BATs, 1-4 ARs, 3-6 BOWLs, max 7 per team. Watch DP find the globally optimal team while greedy gets trapped!</p>
+        </div>
+        <div class="action-buttons">
+          <button id="btn-run-both" class="btn btn-primary btn-glow">
+            <span class="btn-icon">⚡</span> Run Side-by-Side Comparison
+          </button>
+          <button id="btn-run-dp" class="btn btn-dp">
+            <span class="btn-icon">🎯</span> Run DP Only
+          </button>
+          <button id="btn-run-greedy" class="btn btn-greedy">
+            <span class="btn-icon">🏃</span> Run Greedy Only
+          </button>
+        </div>
+      </div>
+
+      <!-- Comparison Callout Banner -->
+      <div id="comparison-banner" class="comparison-banner hidden">
+        <div class="banner-icon">💡</div>
+        <div class="banner-content">
+          <div class="banner-heading" id="banner-heading">Dynamic Programming Beats Greedy by +0 Points!</div>
+          <div class="banner-text" id="banner-subtext">The greedy heuristic prioritizes local point/credit ratio but runs out of budget, while 0/1 Knapsack explores the combinatorial state space to maximize total yield.</div>
+        </div>
+        <div class="banner-metrics">
+          <div class="metric-chip dp-metric">
+            <span class="metric-label">DP Score</span>
+            <span class="metric-val" id="banner-dp-score">0</span>
+          </div>
+          <div class="metric-chip greedy-metric">
+            <span class="metric-label">Greedy Score</span>
+            <span class="metric-val" id="banner-greedy-score">0</span>
+          </div>
+          <div class="metric-chip delta-metric">
+            <span class="metric-label">Optimality Gap</span>
+            <span class="metric-val" id="banner-gap">+0%</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Side-by-Side Results Grid -->
+      <div class="comparison-grid">
+        <!-- DP Card -->
+        <div class="result-card dp-card">
+          <div class="card-header">
+            <div class="card-badge dp-badge">
+              <span class="badge-dot"></span> Dynamic Programming (Exact Optimal)
+            </div>
+            <span class="algo-complexity">O(N · 990K States)</span>
+          </div>
+
+          <div class="stats-row">
+            <div class="stat-box">
+              <span class="stat-num" id="dp-total-points">—</span>
+              <span class="stat-lbl">Base Points</span>
+            </div>
+            <div class="stat-box highlight-stat">
+              <span class="stat-num" id="dp-final-score">—</span>
+              <span class="stat-lbl">Final Score (w/ C & VC)</span>
+            </div>
+            <div class="stat-box">
+              <span class="stat-num" id="dp-credits">—/100</span>
+              <span class="stat-lbl">Credits Used</span>
+            </div>
+            <div class="stat-box time-stat">
+              <span class="stat-num" id="dp-time">— ms</span>
+              <span class="stat-lbl">Compute Time</span>
+            </div>
+          </div>
+
+          <div class="composition-bar" id="dp-composition">
+            <span class="comp-item">Role breakdown: —</span>
+          </div>
+
+          <div class="team-players-container">
+            <div class="table-label">Selected Starting XI</div>
+            <div class="player-roster" id="dp-roster">
+              <div class="empty-state">Click "Run Side-by-Side Comparison" or "Run DP Only" to compute the optimal XI.</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Greedy Card -->
+        <div class="result-card greedy-card">
+          <div class="card-header">
+            <div class="card-badge greedy-badge">
+              <span class="badge-dot"></span> Greedy Quick Pick (Points/Credit Ratio)
+            </div>
+            <span class="algo-complexity">O(N log N)</span>
+          </div>
+
+          <div class="stats-row">
+            <div class="stat-box">
+              <span class="stat-num" id="greedy-total-points">—</span>
+              <span class="stat-lbl">Base Points</span>
+            </div>
+            <div class="stat-box highlight-stat">
+              <span class="stat-num" id="greedy-final-score">—</span>
+              <span class="stat-lbl">Final Score (w/ C & VC)</span>
+            </div>
+            <div class="stat-box">
+              <span class="stat-num" id="greedy-credits">—/100</span>
+              <span class="stat-lbl">Credits Used</span>
+            </div>
+            <div class="stat-box time-stat">
+              <span class="stat-num" id="greedy-time">— ms</span>
+              <span class="stat-lbl">Compute Time</span>
+            </div>
+          </div>
+
+          <div class="composition-bar" id="greedy-composition">
+            <span class="comp-item">Role breakdown: —</span>
+          </div>
+
+          <div class="team-players-container">
+            <div class="table-label">Selected Starting XI</div>
+            <div class="player-roster" id="greedy-roster">
+              <div class="empty-state">Click "Run Side-by-Side Comparison" or "Run Greedy Only" to compute the heuristic XI.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== TAB 2: PLAYER POOL ==================== -->
+    <section id="pane-player-pool" class="tab-pane">
+      <div class="pane-header">
+        <div>
+          <h2 class="pane-title">Available Player Pool (200 Players)</h2>
+          <p class="pane-desc">Filter and sort candidate players from India & Australia across 4 roles before running optimization.</p>
+        </div>
+        <div class="filter-controls">
+          <div class="filter-group">
+            <label for="filter-role">Role:</label>
+            <select id="filter-role" class="form-select">
+              <option value="all">All Roles</option>
+              <option value="wicketkeeper">Wicketkeeper</option>
+              <option value="batter">Batter</option>
+              <option value="allrounder">All-Rounder</option>
+              <option value="bowler">Bowler</option>
+            </select>
+          </div>
+          <div class="filter-group">
+            <label for="filter-team">Team:</label>
+            <select id="filter-team" class="form-select">
+              <option value="all">All Teams</option>
+              <option value="India">India</option>
+              <option value="Australia">Australia</option>
+            </select>
+          </div>
+          <div class="filter-group">
+            <label for="sort-by">Sort By:</label>
+            <select id="sort-by" class="form-select">
+              <option value="ratio-desc">Points / Credit Ratio (Greedy Priority)</option>
+              <option value="points-desc">Fantasy Points (High to Low)</option>
+              <option value="credits-desc">Credits (Expensive First)</option>
+              <option value="credits-asc">Credits (Cheapest First)</option>
+              <option value="form-desc">Recent Form (High to Low)</option>
+            </select>
+          </div>
+          <input type="text" id="search-player" class="form-input" placeholder="Search player name...">
+        </div>
+      </div>
+
+      <div class="pool-stats-bar" id="pool-stats">
+        <span>Showing <strong id="pool-count">0</strong> players</span>
+      </div>
+
+      <div class="pool-table-wrapper">
+        <table class="data-table" id="pool-table">
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Player Name</th>
+              <th>Role</th>
+              <th>Real Team</th>
+              <th>Credits</th>
+              <th>Points</th>
+              <th>Pts / Cr Ratio</th>
+              <th>Recent Form</th>
+            </tr>
+          </thead>
+          <tbody id="pool-table-body">
+            <tr><td colspan="8" class="text-center">Loading players...</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ==================== TAB 3: LEADERBOARD (AUGMENTED TREAP) ==================== -->
+    <section id="pane-leaderboard" class="tab-pane">
+      <div class="pane-header">
+        <div>
+          <h2 class="pane-title">Live Leaderboard: Custom Augmented Treap</h2>
+          <p class="pane-desc">Hand-built balanced BST (Treap) augmented with subtree sizes. Evaluates <code>getRank(user)</code> in O(log N) and <code>getTopN(K)</code> in O(log N + K). NO standard library map/set used.</p>
+        </div>
+        <div class="action-buttons">
+          <button id="btn-simulate-live" class="btn btn-accent">
+            <span class="btn-icon">⚡</span> Simulate Live Score Updates
+          </button>
+        </div>
+      </div>
+
+      <!-- Treap Controls Row -->
+      <div class="treap-controls-grid">
+        <!-- Rank Lookup Card -->
+        <div class="tool-card">
+          <div class="tool-title">🔍 Query User Rank in O(log N)</div>
+          <div class="form-inline">
+            <input type="number" id="input-lookup-id" class="form-input" placeholder="User ID (e.g. 101)" value="101">
+            <button id="btn-lookup-rank" class="btn btn-secondary">Get Rank</button>
+          </div>
+          <div id="lookup-result" class="lookup-output">Click "Get Rank" to query the Treap</div>
+        </div>
+
+        <!-- Add/Update User Score -->
+        <div class="tool-card">
+          <div class="tool-title">✏️ Upsert Score in O(log N)</div>
+          <div class="form-inline">
+            <input type="number" id="input-upsert-id" class="form-input" placeholder="User ID" style="width: 90px;" value="116">
+            <input type="text" id="input-upsert-name" class="form-input" placeholder="Name" style="width: 140px;" value="Virat Fanatic">
+            <input type="number" id="input-upsert-score" class="form-input" placeholder="Score" style="width: 90px;" value="930">
+            <button id="btn-upsert-score" class="btn btn-secondary">Upsert</button>
+          </div>
+          <div id="upsert-result" class="lookup-output">Enter score to insert or update</div>
+        </div>
+      </div>
+
+      <!-- Leaderboard Table -->
+      <div class="leaderboard-container">
+        <div class="table-header-bar">
+          <div class="table-heading">Global Rankings (Augmented Treap In-Order Traversal)</div>
+          <div class="table-controls">
+            <label for="select-top-n">Display Top:</label>
+            <select id="select-top-n" class="form-select select-compact">
+              <option value="10">Top 10</option>
+              <option value="15" selected>Top 15</option>
+              <option value="25">Top 25</option>
+            </select>
+          </div>
+        </div>
+
+        <table class="data-table leaderboard-table" id="leaderboard-table">
+          <thead>
+            <tr>
+              <th style="width: 80px;">Rank</th>
+              <th>User ID</th>
+              <th>Competitor Name</th>
+              <th>Fantasy Score</th>
+              <th>Subtree Status</th>
+            </tr>
+          </thead>
+          <tbody id="leaderboard-table-body">
+            <tr><td colspan="5" class="text-center">Loading leaderboard...</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ==================== TAB 4: TRENDING (BINARY HEAP) ==================== -->
+    <section id="pane-trending" class="tab-pane">
+      <div class="pane-header">
+        <div>
+          <h2 class="pane-title">Top-K Trending Players: Binary Min-Heap</h2>
+          <p class="pane-desc">Maintains a custom min-heap of capacity K to stream through all 200 players in O(N log K) time with O(K) space, avoiding a full O(N log N) sort.</p>
+        </div>
+        <div class="filter-controls">
+          <label for="select-k">Select Top K:</label>
+          <select id="select-k" class="form-select">
+            <option value="5">Top 5 Trending</option>
+            <option value="10" selected>Top 10 Trending</option>
+            <option value="15">Top 15 Trending</option>
+            <option value="20">Top 20 Trending</option>
+          </select>
+          <span class="heap-metric" id="heap-time">Heap Time: 0.00 ms</span>
+        </div>
+      </div>
+
+      <div class="trending-grid" id="trending-grid">
+        <div class="text-center" style="grid-column: 1/-1;">Loading trending players...</div>
+      </div>
+    </section>
+
+    <!-- ==================== TAB 5: LEAGUES (DSU) ==================== -->
+    <section id="pane-leagues" class="tab-pane">
+      <div class="pane-header">
+        <div>
+          <h2 class="pane-title">Friend Leagues: Disjoint Set Union (DSU)</h2>
+          <p class="pane-desc">Users merge into social fantasy leagues via DSU with Path Compression and Union-by-Rank. Find & Union queries run in near-instant O(α(N)) time.</p>
+        </div>
+      </div>
+
+      <!-- DSU Actions Grid -->
+      <div class="treap-controls-grid">
+        <!-- Check Same League Card -->
+        <div class="tool-card">
+          <div class="tool-title">🔎 Check Same League: <code>same(u1, u2)</code> in O(α(N))</div>
+          <div class="form-inline">
+            <input type="number" id="input-same-u1" class="form-input" placeholder="User A ID" value="101" style="width: 120px;">
+            <span class="vs-text">&</span>
+            <input type="number" id="input-same-u2" class="form-input" placeholder="User B ID" value="105" style="width: 120px;">
+            <button id="btn-check-same" class="btn btn-secondary">Check Connection</button>
+          </div>
+          <div id="same-result" class="lookup-output">Click "Check Connection" to test if users share a league.</div>
+        </div>
+
+        <!-- Merge League Card -->
+        <div class="tool-card">
+          <div class="tool-title">🤝 Merge Leagues: <code>unite(u1, u2)</code> in O(α(N))</div>
+          <div class="form-inline">
+            <input type="number" id="input-merge-u1" class="form-input" placeholder="User A ID" value="103" style="width: 120px;">
+            <span class="vs-text">+</span>
+            <input type="number" id="input-merge-u2" class="form-input" placeholder="User B ID" value="104" style="width: 120px;">
+            <button id="btn-merge-leagues" class="btn btn-accent">Merge Leagues</button>
+          </div>
+          <div id="merge-result" class="lookup-output">Merge two users or their existing leagues into one.</div>
+        </div>
+      </div>
+
+      <!-- Leagues Visualization Clusters -->
+      <div class="leagues-container">
+        <div class="table-header-bar">
+          <div class="table-heading">Active League Clusters (Connected Components)</div>
+          <span class="league-count-badge" id="league-count-badge">0 Leagues</span>
+        </div>
+        <div class="league-clusters-grid" id="league-clusters">
+          <div class="text-center" style="grid-column: 1/-1;">Loading league clusters...</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== TAB 6: COMPLEXITY BENCHMARK ==================== -->
+    <section id="pane-benchmark" class="tab-pane">
+      <div class="pane-header">
+        <div>
+          <h2 class="pane-title">Algorithmic Complexity Benchmark</h2>
+          <p class="pane-desc">Empirical measurement of DP Knapsack vs. Greedy Heuristic as candidate pool size scales from N=20 to N=200.</p>
+        </div>
+        <div>
+          <button id="btn-run-benchmark" class="btn btn-primary btn-glow">
+            <span class="btn-icon">▶️</span> Run Live Benchmark
+          </button>
+        </div>
+      </div>
+
+      <!-- Benchmark Metrics Cards -->
+      <div class="benchmark-grid">
+        <div class="chart-card">
+          <div class="chart-title">Execution Time (ms) vs. Candidate Pool Size N</div>
+          <div class="chart-container">
+            <canvas id="benchmark-chart" width="700" height="320"></canvas>
+          </div>
+          <div class="chart-legend">
+            <span class="legend-item"><span class="legend-dot dp-dot"></span> DP Knapsack (Polynomial/Pseudo-polynomial)</span>
+            <span class="legend-item"><span class="legend-dot greedy-dot"></span> Greedy Pick (O(N log N))</span>
+          </div>
+        </div>
+
+        <div class="table-card">
+          <div class="chart-title">Benchmark Results Table</div>
+          <table class="data-table benchmark-table" id="benchmark-table">
+            <thead>
+              <tr>
+                <th>Pool (N)</th>
+                <th>DP Time</th>
+                <th>DP Score</th>
+                <th>Greedy Time</th>
+                <th>Greedy Score</th>
+                <th>Opt. Gap</th>
+              </tr>
+            </thead>
+            <tbody id="benchmark-table-body">
+              <tr><td colspan="6" class="text-center">Click "Run Live Benchmark" to execute tests.</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- Theoretical Complexity Summary -->
+      <div class="complexity-summary-card">
+        <div class="card-title">Theoretical Complexity Analysis of DreamXI Modules</div>
+        <div class="complexity-cards-row">
+          <div class="c-card">
+            <div class="c-header">0/1 Knapsack DP</div>
+            <div class="c-time">Time: O(N · States) ≈ O(N · 990K)</div>
+            <div class="c-space">Space: O(States + N · States / 8)</div>
+            <p class="c-desc">Guarantees global maximum fantasy points across 6 simultaneous constraints. Backtracks via bitset.</p>
+          </div>
+          <div class="c-card">
+            <div class="c-header">Greedy Heuristic</div>
+            <div class="c-time">Time: O(N log N)</div>
+            <div class="c-space">Space: O(N)</div>
+            <p class="c-desc">Picks by points/credit ratio. Fast but susceptible to budget traps, leaving sub-optimal residual credits.</p>
+          </div>
+          <div class="c-card">
+            <div class="c-header">Augmented Treap</div>
+            <div class="c-time">Rank: O(log N) | Top-K: O(log N + K)</div>
+            <div class="c-space">Space: O(N)</div>
+            <p class="c-desc">BST ordered by score with randomized heap priorities. Subtree size augmentation enables order-statistic lookups.</p>
+          </div>
+          <div class="c-card">
+            <div class="c-header">Binary Min-Heap</div>
+            <div class="c-time">Time: O(N log K)</div>
+            <div class="c-space">Space: O(K)</div>
+            <p class="c-desc">Bounded capacity K heap retains highest form players in a single pass without sorting the remaining N-K items.</p>
+          </div>
+          <div class="c-card">
+            <div class="c-header">Disjoint Set Union</div>
+            <div class="c-time">Find & Unite: O(α(N)) ≈ O(1)</div>
+            <div class="c-space">Space: O(N)</div>
+            <p class="c-desc">Path compression flattens trees on lookup; union-by-rank balances depths, yielding inverse Ackermann time.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="app-footer">
+    <div class="footer-container">
+      <div>DreamXI Fantasy Sports Engine • Designed for DAA Course Demonstration</div>
+      <div class="tech-stack-tags">
+        <span>C++17</span>
+        <span>cpp-httplib</span>
+        <span>Treap BST</span>
+        <span>Binary Heap</span>
+        <span>DSU</span>
+        <span>0/1 Knapsack DP</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

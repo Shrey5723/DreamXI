@@ -1,0 +1,1802 @@
+[
+  {
+    "id": 1,
+    "name": "Matt Wright",
+    "role": "batter",
+    "real_team": "Australia",
+    "credits": 10,
+    "fantasy_points": 56,
+    "recent_form": 6.5
+  },
+  {
+    "id": 2,
+    "name": "Josh Harris",
+    "role": "batter",
+    "real_team": "Australia",
+    "credits": 11,
+    "fantasy_points": 80,
+    "recent_form": 5.2
+  },
+  {
+    "id": 3,
+    "name": "Manish Kumar",
+    "role": "batter",
+    "real_team": "India",
+    "credits": 8,
+    "fantasy_points": 51,
+    "recent_form": 5.9
+  },
+  {
+    "id": 4,
+    "name": "Harry Walker",
+    "role": "bowler",
+    "real_team": "Australia",
+    "credits": 9,
+    "fantasy_points": 56,
+    "recent_form": 5.2
+  },
+  {
+    "id": 5,
+    "name": "Deepak Bhatt",
+    "role": "batter",
+    "real_team": "India",
+    "credits": 12,
+    "fantasy_points": 81,
+    "recent_form": 7.0
+  },
+  {
+    "id": 6,
+    "name": "Matthew Wade",
+    "role": "wicketkeeper",
+    "real_team": "Australia",
+    "credits": 6,
+    "fantasy_points": 42,
+    "recent_form": 6.0
+  },
+  {
+    "id": 7,
+    "name": "Sachin Patel",
+    "role": "batter",
+    "real_team": "India",
+    "credits": 5,
+    "fantasy_points": 24,
+    "recent_form": 4.7
+  },
+  {
+    "id": 8,
+    "name": "Rahul Patel",
+    "role": "bowler",
+    "real_team": "India",
+    "credits": 10,
+    "fantasy_points": 66,
+    "recent_form": 4.0
+  },
+  {
+    "id": 9,
+    "name": "Luke Thomas",
+    "role": "batter",
+    "real_team": "Australia",
+    "credits": 5,
+    "fantasy_points": 23,
+    "recent_form": 4.8
+  },
+  {
+    "id": 10,
+    "name": "Kunal Tiwari",
+    "role": "batter",
+    "real_team": "India",
+    "credits": 10,
+    "fantasy_points": 60,
+    "recent_form": 9.4
+  },
+  {
+    "id": 11,
+    "name": "Dinesh Verma",
+    "role": "batter",
+    "real_team": "India",
+    "credits": 11,
+    "fantasy_points": 82,
+    "recent_form": 3.2
+  },
+  {
+    "id": 12,
+    "name": "KL Rahul",
+    "role": "batter",
+    "real_team": "India",
+    "credits": 11,
+    "fantasy_points": 88,
+    "recent_form": 8.5
+  },
+  {
+    "id": 13,
+    "name": "Josh Jackson",
+    "role": "batter",
+    "real_team": "Australia",
+    "credits": 10,
+    "fantasy_points": 74,
+    "recent_form": 7.8
+  },
+  {
+    "id": 14,
+    "name": "Tarun Kapoor",
+    "role": "batter",
+    "real_team": "India",
+    "credits": 11,
+    "fantasy_points": 89,
+    "recent_form": 5.0
+  },
+  {
+    "id": 15,
+    "name": "Shreyas Iyer",
+    "role": "batter",
+    "real_team": "India",
+    "credits": 10,
+    "fantasy_points": 82,
+    "recent_form": 7.5
+  },
+  {
+    "id": 16,
+    "name": "Adam Hall",
+    "role": "batter",
+    "real_team": "Australia",
+    "credits": 8,
+    "fantasy_points": 47,
+    "recent_form": 6.3
+  },
+  {
+    "id": 17,
+    "name": "Hari Rao",
+    "role": "batter",
+    "real_team": "India",
+    "credits": 10,
+    "fantasy_points": 68,
+    "recent_form": 8.7
+  },
+  {
+    "id": 18,
+    "name": "Tom Brown",
+    "role": "batter",
+    "real_team": "Australia",
+    "credits": 9,
+    "fantasy_points": 62,
+    "recent_form": 5.0
+  },
+  {
+    "id": 19,
+    "name": "Zach King",
+    "role": "allrounder",
+    "real_team": "Australia",
+    "credits": 12,
+    "fantasy_points": 63,
+    "recent_form": 6.8
+  },
+  {
+    "id": 20,
+    "name": "Axar Patel",
+    "role": "allrounder",
+    "real_team": "India",
+    "credits": 7,
+    "fantasy_points": 55,
+    "recent_form": 7.0
+  },
+  {
+    "id": 21,
+    "name": "Rohit Sharma",
+    "role": "batter",
+    "real_team": "India",
+    "credits": 12,
+    "fantasy_points": 94,
+    "recent_form": 9.0
+  },
+  {
+    "id": 22,
+    "name": "Zach Walker",
+    "role": "wicketkeeper",
+    "real_team": "Australia",
+    "credits": 5,
+    "fantasy_points": 31,
+    "recent_form": 4.0
+  },
+  {
+    "id": 23,
+    "name": "Ryan Harris",
+    "role": "allrounder",
+    "real_team": "Australia",
+    "credits": 11,
+    "fantasy_points": 83,
+    "recent_form": 2.1
+  },
+  {
+    "id": 24,
+    "name": "Ankit Nair",
+    "role": "batter",
+    "real_team": "India",
+    "credits": 10,
+    "fantasy_points": 55,
+    "recent_form": 6.4
+  },
+  {
+    "id": 25,
+    "name": "Rohan Nair",
+    "role": "batter",
+    "real_team": "India",
+    "credits": 5,
+    "fantasy_points": 46,
+    "recent_form": 7.0
+  },
+  {
+    "id": 26,
+    "name": "Pranav Verma",
+    "role": "bowler",
+    "real_team": "India",
+    "credits": 5,
+    "fantasy_points": 26,
+    "recent_form": 7.0
+  },
+  {
+    "id": 27,
+    "name": "Amit Kumar",
+    "role": "allrounder",
+    "real_team": "India",
+    "credits": 6,
+    "fantasy_points": 40,
+    "recent_form": 8.3
+  },
+  {
+    "id": 28,
+    "name": "Arjun Sharma",
+    "role": "wicketkeeper",
+    "real_team": "India",
+    "credits": 7,
+    "fantasy_points": 51,
+    "recent_form": 7.6
+  },
+  {
+    "id": 29,
+    "name": "Raj Bhatt",
+    "role": "allrounder",
+    "real_team": "India",
+    "credits": 8,
+    "fantasy_points": 56,
+    "recent_form": 7.7
+  },
+  {
+    "id": 30,
+    "name": "Karan Gupta",
+    "role": "bowler",
+    "real_team": "India",
+    "credits": 6,
+    "fantasy_points": 36,
+    "recent_form": 9.5
+  },
+  {
+    "id": 31,
+    "name": "Ravi Mishra",
+    "role": "bowler",
+    "real_team": "India",
+    "credits": 6,
+    "fantasy_points": 41,
+    "recent_form": 3.2
+  },
+  {
+    "id": 32,
+    "name": "Nathan Lyon",
+    "role": "bowler",
+    "real_team": "Australia",
+    "credits": 8,
+    "fantasy_points": 65,
+    "recent_form": 7.5
+  },
+  {
+    "id": 33,
+    "name": "Deepak Kumar",
+    "role": "bowler",
+    "real_team": "India",
+    "credits": 7,
+    "fantasy_points": 46,
+    "recent_form": 8.3
+  },
+  {
+    "id": 34,
+    "name": "Connor Hall",
+    "role": "wicketkeeper",
+    "real_team": "Australia",
+    "credits": 11,
+    "fantasy_points": 62,
+    "recent_form": 7.9
+  },
+  {
+    "id": 35,
+    "name": "Noah Scott",
+    "role": "batter",
+    "real_team": "Australia",
+    "credits": 11,
+    "fantasy_points": 63,
+    "recent_form": 8.9
+  },
+  {
+    "id": 36,
+    "name": "Harry Wright",
+    "role": "bowler",
+    "real_team": "Australia",
+    "credits": 8,
+    "fantasy_points": 43,
+    "recent_form": 7.1
+  },
+  {
+    "id": 37,
+    "name": "Matt Taylor",
+    "role": "batter",
+    "real_team": "Australia",
+    "credits": 8,
+    "fantasy_points": 41,
+    "recent_form": 5.5
+  },
+  {
+    "id": 38,
+    "name": "Rohan Bhatt",
+    "role": "allrounder",
+    "real_team": "India",
+    "credits": 11,
+    "fantasy_points": 73,
+    "recent_form": 8.6
+  },
+  {
+    "id": 39,
+    "name": "Zach Brown",
+    "role": "batter",
+    "real_team": "Australia",
+    "credits": 12,
+    "fantasy_points": 83,
+    "recent_form": 2.3
+  },
+  {
+    "id": 40,
+    "name": "Ravindra Jadeja",
+    "role": "allrounder",
+    "real_team": "India",
+    "credits": 10,
+    "fantasy_points": 82,
+    "recent_form": 8.5
+  },
+  {
+    "id": 41,
+    "name": "Vishal Singh",
+    "role": "batter",
+    "real_team": "India",
+    "credits": 10,
+    "fantasy_points": 70,
+    "recent_form": 6.6
+  },
+  {
+    "id": 42,
+    "name": "Deepak Rao",
+    "role": "bowler",
+    "real_team": "India",
+    "credits": 9,
+    "fantasy_points": 56,
+    "recent_form": 5.0
+  },
+  {
+    "id": 43,
+    "name": "Daniel Thomas",
+    "role": "wicketkeeper",
+    "real_team": "Australia",
+    "credits": 6,
+    "fantasy_points": 53,
+    "recent_form": 4.8
+  },
+  {
+    "id": 44,
+    "name": "Ben Wright",
+    "role": "batter",
+    "real_team": "Australia",
+    "credits": 10,
+    "fantasy_points": 67,
+    "recent_form": 8.3
+  },
+  {
+    "id": 45,
+    "name": "Connor Taylor",
+    "role": "bowler",
+    "real_team": "Australia",
+    "credits": 8,
+    "fantasy_points": 66,
+    "recent_form": 1.9
+  },
+  {
+    "id": 46,
+    "name": "Hari Sharma",
+    "role": "batter",
+    "real_team": "India",
+    "credits": 11,
+    "fantasy_points": 51,
+    "recent_form": 10.0
+  },
+  {
+    "id": 47,
+    "name": "Sanjay Mishra",
+    "role": "wicketkeeper",
+    "real_team": "India",
+    "credits": 11,
+    "fantasy_points": 83,
+    "recent_form": 8.9
+  },
+  {
+    "id": 48,
+    "name": "Luke Harris",
+    "role": "wicketkeeper",
+    "real_team": "Australia",
+    "credits": 12,
+    "fantasy_points": 83,
+    "recent_form": 6.6
+  },
+  {
+    "id": 49,
+    "name": "Marnus Labuschagne",
+    "role": "batter",
+    "real_team": "Australia",
+    "credits": 10,
+    "fantasy_points": 80,
+    "recent_form": 8.0
+  },
+  {
+    "id": 50,
+    "name": "Finn Jones",
+    "role": "allrounder",
+    "real_team": "Australia",
+    "credits": 8,
+    "fantasy_points": 51,
+    "recent_form": 7.1
+  },
+  {
+    "id": 51,
+    "name": "Suryakumar Yadav",
+    "role": "batter",
+    "real_team": "India",
+    "credits": 7,
+    "fantasy_points": 62,
+    "recent_form": 8.0
+  },
+  {
+    "id": 52,
+    "name": "Ashton Agar",
+    "role": "allrounder",
+    "real_team": "Australia",
+    "credits": 6,
+    "fantasy_points": 42,
+    "recent_form": 5.8
+  },
+  {
+    "id": 53,
+    "name": "Raj Kumar",
+    "role": "allrounder",
+    "real_team": "India",
+    "credits": 11,
+    "fantasy_points": 61,
+    "recent_form": 6.8
+  },
+  {
+    "id": 54,
+    "name": "Piyush Singh",
+    "role": "bowler",
+    "real_team": "India",
+    "credits": 8,
+    "fantasy_points": 58,
+    "recent_form": 2.7
+  },
+  {
+    "id": 55,
+    "name": "Jack Scott",
+    "role": "bowler",
+    "real_team": "Australia",
+    "credits": 6,
+    "fantasy_points": 40,
+    "recent_form": 9.0
+  },
+  {
+    "id": 56,
+    "name": "Tarun Verma",
+    "role": "bowler",
+    "real_team": "India",
+    "credits": 11,
+    "fantasy_points": 69,
+    "recent_form": 8.8
+  },
+  {
+    "id": 57,
+    "name": "Pradeep Bhatt",
+    "role": "bowler",
+    "real_team": "India",
+    "credits": 5,
+    "fantasy_points": 29,
+    "recent_form": 5.7
+  },
+  {
+    "id": 58,
+    "name": "Gaurav Gupta",
+    "role": "allrounder",
+    "real_team": "India",
+    "credits": 6,
+    "fantasy_points": 48,
+    "recent_form": 4.4
+  },
+  {
+    "id": 59,
+    "name": "Travis Head",
+    "role": "batter",
+    "real_team": "Australia",
+    "credits": 9,
+    "fantasy_points": 75,
+    "recent_form": 7.8
+  },
+  {
+    "id": 60,
+    "name": "Manish Chauhan",
+    "role": "bowler",
+    "real_team": "India",
+    "credits": 12,
+    "fantasy_points": 73,
+    "recent_form": 10.0
+  },
+  {
+    "id": 61,
+    "name": "Gaurav Sinha",
+    "role": "wicketkeeper",
+    "real_team": "India",
+    "credits": 5,
+    "fantasy_points": 44,
+    "recent_form": 6.0
+  },
+  {
+    "id": 62,
+    "name": "KS Bharat",
+    "role": "wicketkeeper",
+    "real_team": "India",
+    "credits": 7,
+    "fantasy_points": 52,
+    "recent_form": 6.5
+  },
+  {
+    "id": 63,
+    "name": "Nitin Saxena",
+    "role": "bowler",
+    "real_team": "India",
+    "credits": 6,
+    "fantasy_points": 42,
+    "recent_form": 4.2
+  },
+  {
+    "id": 64,
+    "name": "Hugo Anderson",
+    "role": "bowler",
+    "real_team": "Australia",
+    "credits": 9,
+    "fantasy_points": 45,
+    "recent_form": 8.1
+  },
+  {
+    "id": 65,
+    "name": "Josh Thompson",
+    "role": "allrounder",
+    "real_team": "Australia",
+    "credits": 9,
+    "fantasy_points": 45,
+    "recent_form": 4.1
+  },
+  {
+    "id": 66,
+    "name": "Josh King",
+    "role": "bowler",
+    "real_team": "Australia",
+    "credits": 12,
+    "fantasy_points": 72,
+    "recent_form": 8.1
+  },
+  {
+    "id": 67,
+    "name": "Yash Kumar",
+    "role": "wicketkeeper",
+    "real_team": "India",
+    "credits": 6,
+    "fantasy_points": 52,
+    "recent_form": 4.3
+  },
+  {
+    "id": 68,
+    "name": "David Warner",
+    "role": "batter",
+    "real_team": "Australia",
+    "credits": 11,
+    "fantasy_points": 87,
+    "recent_form": 8.2
+  },
+  {
+    "id": 69,
+    "name": "Oliver Jackson",
+    "role": "batter",
+    "real_team": "Australia",
+    "credits": 9,
+    "fantasy_points": 58,
+    "recent_form": 3.9
+  },
+  {
+    "id": 70,
+    "name": "Connor Brown",
+    "role": "bowler",
+    "real_team": "Australia",
+    "credits": 11,
+    "fantasy_points": 84,
+    "recent_form": 5.5
+  },
+  {
+    "id": 71,
+    "name": "Sachin Chauhan",
+    "role": "bowler",
+    "real_team": "India",
+    "credits": 8,
+    "fantasy_points": 61,
+    "recent_form": 10.0
+  },
+  {
+    "id": 72,
+    "name": "Virat Kohli",
+    "role": "batter",
+    "real_team": "India",
+    "credits": 12,
+    "fantasy_points": 95,
+    "recent_form": 9.2
+  },
+  {
+    "id": 73,
+    "name": "Arjun Tiwari",
+    "role": "bowler",
+    "real_team": "India",
+    "credits": 9,
+    "fantasy_points": 58,
+    "recent_form": 2.2
+  },
+  {
+    "id": 74,
+    "name": "Chris Wilson",
+    "role": "wicketkeeper",
+    "real_team": "Australia",
+    "credits": 10,
+    "fantasy_points": 71,
+    "recent_form": 3.8
+  },
+  {
+    "id": 75,
+    "name": "Noah Jackson",
+    "role": "bowler",
+    "real_team": "Australia",
+    "credits": 11,
+    "fantasy_points": 62,
+    "recent_form": 4.9
+  },
+  {
+    "id": 76,
+    "name": "Tarun Bhatt",
+    "role": "bowler",
+    "real_team": "India",
+    "credits": 11,
+    "fantasy_points": 82,
+    "recent_form": 5.2
+  },
+  {
+    "id": 77,
+    "name": "Nitin Singh",
+    "role": "allrounder",
+    "real_team": "India",
+    "credits": 7,
+    "fantasy_points": 44,
+    "recent_form": 3.6
+  },
+  {
+    "id": 78,
+    "name": "Oscar Thomas",
+    "role": "bowler",
+    "real_team": "Australia",
+    "credits": 9,
+    "fantasy_points": 59,
+    "recent_form": 7.2
+  },
+  {
+    "id": 79,
+    "name": "Washington Sundar",
+    "role": "allrounder",
+    "real_team": "India",
+    "credits": 6,
+    "fantasy_points": 45,
+    "recent_form": 6.2
+  },
+  {
+    "id": 80,
+    "name": "Matt Anderson",
+    "role": "batter",
+    "real_team": "Australia",
+    "credits": 8,
+    "fantasy_points": 58,
+    "recent_form": 7.8
+  },
+  {
+    "id": 81,
+    "name": "Shubman Gill",
+    "role": "batter",
+    "real_team": "India",
+    "credits": 11,
+    "fantasy_points": 86,
+    "recent_form": 8.8
+  },
+  {
+    "id": 82,
+    "name": "Amit Singh",
+    "role": "bowler",
+    "real_team": "India",
+    "credits": 9,
+    "fantasy_points": 57,
+    "recent_form": 5.0
+  },
+  {
+    "id": 83,
+    "name": "Ryan Brown",
+    "role": "batter",
+    "real_team": "Australia",
+    "credits": 8,
+    "fantasy_points": 48,
+    "recent_form": 6.9
+  },
+  {
+    "id": 84,
+    "name": "Charlie Young",
+    "role": "allrounder",
+    "real_team": "Australia",
+    "credits": 5,
+    "fantasy_points": 27,
+    "recent_form": 3.8
+  },
+  {
+    "id": 85,
+    "name": "Gaurav Rao",
+    "role": "batter",
+    "real_team": "India",
+    "credits": 11,
+    "fantasy_points": 63,
+    "recent_form": 9.5
+  },
+  {
+    "id": 86,
+    "name": "Nathan Hall",
+    "role": "bowler",
+    "real_team": "Australia",
+    "credits": 8,
+    "fantasy_points": 51,
+    "recent_form": 6.8
+  },
+  {
+    "id": 87,
+    "name": "Anil Pandey",
+    "role": "batter",
+    "real_team": "India",
+    "credits": 6,
+    "fantasy_points": 31,
+    "recent_form": 5.9
+  },
+  {
+    "id": 88,
+    "name": "Dinesh Patel",
+    "role": "allrounder",
+    "real_team": "India",
+    "credits": 6,
+    "fantasy_points": 36,
+    "recent_form": 8.9
+  },
+  {
+    "id": 89,
+    "name": "Mitchell Marsh",
+    "role": "allrounder",
+    "real_team": "Australia",
+    "credits": 10,
+    "fantasy_points": 80,
+    "recent_form": 8.0
+  },
+  {
+    "id": 90,
+    "name": "Mohammed Shami",
+    "role": "bowler",
+    "real_team": "India",
+    "credits": 11,
+    "fantasy_points": 85,
+    "recent_form": 8.5
+  },
+  {
+    "id": 91,
+    "name": "Sachin Nair",
+    "role": "wicketkeeper",
+    "real_team": "India",
+    "credits": 6,
+    "fantasy_points": 41,
+    "recent_form": 3.5
+  },
+  {
+    "id": 92,
+    "name": "Ethan Lewis",
+    "role": "batter",
+    "real_team": "Australia",
+    "credits": 9,
+    "fantasy_points": 55,
+    "recent_form": 5.7
+  },
+  {
+    "id": 93,
+    "name": "Yash Verma",
+    "role": "bowler",
+    "real_team": "India",
+    "credits": 11,
+    "fantasy_points": 77,
+    "recent_form": 6.8
+  },
+  {
+    "id": 94,
+    "name": "Finn Jackson",
+    "role": "wicketkeeper",
+    "real_team": "Australia",
+    "credits": 9,
+    "fantasy_points": 59,
+    "recent_form": 7.3
+  },
+  {
+    "id": 95,
+    "name": "Alex Carey",
+    "role": "wicketkeeper",
+    "real_team": "Australia",
+    "credits": 9,
+    "fantasy_points": 70,
+    "recent_form": 7.5
+  },
+  {
+    "id": 96,
+    "name": "Sunil Pandey",
+    "role": "bowler",
+    "real_team": "India",
+    "credits": 12,
+    "fantasy_points": 85,
+    "recent_form": 4.7
+  },
+  {
+    "id": 97,
+    "name": "Noah Brown",
+    "role": "allrounder",
+    "real_team": "Australia",
+    "credits": 7,
+    "fantasy_points": 30,
+    "recent_form": 4.9
+  },
+  {
+    "id": 98,
+    "name": "Pat Cummins",
+    "role": "bowler",
+    "real_team": "Australia",
+    "credits": 12,
+    "fantasy_points": 93,
+    "recent_form": 9.3
+  },
+  {
+    "id": 99,
+    "name": "Sanjay Kapoor",
+    "role": "batter",
+    "real_team": "India",
+    "credits": 11,
+    "fantasy_points": 67,
+    "recent_form": 5.0
+  },
+  {
+    "id": 100,
+    "name": "Oliver Wright",
+    "role": "batter",
+    "real_team": "Australia",
+    "credits": 12,
+    "fantasy_points": 78,
+    "recent_form": 8.3
+  },
+  {
+    "id": 101,
+    "name": "Ethan Hall",
+    "role": "wicketkeeper",
+    "real_team": "Australia",
+    "credits": 7,
+    "fantasy_points": 54,
+    "recent_form": 6.8
+  },
+  {
+    "id": 102,
+    "name": "Jasprit Bumrah",
+    "role": "bowler",
+    "real_team": "India",
+    "credits": 12,
+    "fantasy_points": 92,
+    "recent_form": 9.5
+  },
+  {
+    "id": 103,
+    "name": "Anil Yadav",
+    "role": "batter",
+    "real_team": "India",
+    "credits": 5,
+    "fantasy_points": 40,
+    "recent_form": 3.3
+  },
+  {
+    "id": 104,
+    "name": "Zach White",
+    "role": "allrounder",
+    "real_team": "Australia",
+    "credits": 7,
+    "fantasy_points": 44,
+    "recent_form": 9.7
+  },
+  {
+    "id": 105,
+    "name": "Ben Martin",
+    "role": "bowler",
+    "real_team": "Australia",
+    "credits": 8,
+    "fantasy_points": 51,
+    "recent_form": 7.1
+  },
+  {
+    "id": 106,
+    "name": "Glenn Maxwell",
+    "role": "allrounder",
+    "real_team": "Australia",
+    "credits": 9,
+    "fantasy_points": 72,
+    "recent_form": 7.8
+  },
+  {
+    "id": 107,
+    "name": "Ishan Kishan",
+    "role": "batter",
+    "real_team": "India",
+    "credits": 6,
+    "fantasy_points": 52,
+    "recent_form": 7.2
+  },
+  {
+    "id": 108,
+    "name": "Pranav Kapoor",
+    "role": "bowler",
+    "real_team": "India",
+    "credits": 5,
+    "fantasy_points": 39,
+    "recent_form": 6.6
+  },
+  {
+    "id": 109,
+    "name": "Leo Smith",
+    "role": "bowler",
+    "real_team": "Australia",
+    "credits": 6,
+    "fantasy_points": 34,
+    "recent_form": 3.7
+  },
+  {
+    "id": 110,
+    "name": "Alex Wilson",
+    "role": "allrounder",
+    "real_team": "Australia",
+    "credits": 9,
+    "fantasy_points": 46,
+    "recent_form": 5.9
+  },
+  {
+    "id": 111,
+    "name": "Deepak Sharma",
+    "role": "bowler",
+    "real_team": "India",
+    "credits": 8,
+    "fantasy_points": 39,
+    "recent_form": 4.1
+  },
+  {
+    "id": 112,
+    "name": "Dylan Brown",
+    "role": "allrounder",
+    "real_team": "Australia",
+    "credits": 5,
+    "fantasy_points": 25,
+    "recent_form": 3.1
+  },
+  {
+    "id": 113,
+    "name": "Oliver Young",
+    "role": "batter",
+    "real_team": "Australia",
+    "credits": 12,
+    "fantasy_points": 80,
+    "recent_form": 6.3
+  },
+  {
+    "id": 114,
+    "name": "Oscar Clark",
+    "role": "wicketkeeper",
+    "real_team": "Australia",
+    "credits": 9,
+    "fantasy_points": 74,
+    "recent_form": 6.2
+  },
+  {
+    "id": 115,
+    "name": "Amit Nair",
+    "role": "batter",
+    "real_team": "India",
+    "credits": 10,
+    "fantasy_points": 76,
+    "recent_form": 3.9
+  },
+  {
+    "id": 116,
+    "name": "Raj Chauhan",
+    "role": "bowler",
+    "real_team": "India",
+    "credits": 10,
+    "fantasy_points": 64,
+    "recent_form": 7.4
+  },
+  {
+    "id": 117,
+    "name": "Jack Wright",
+    "role": "bowler",
+    "real_team": "Australia",
+    "credits": 10,
+    "fantasy_points": 64,
+    "recent_form": 5.1
+  },
+  {
+    "id": 118,
+    "name": "Deepak Tiwari",
+    "role": "allrounder",
+    "real_team": "India",
+    "credits": 9,
+    "fantasy_points": 59,
+    "recent_form": 4.8
+  },
+  {
+    "id": 119,
+    "name": "Luke Martin",
+    "role": "bowler",
+    "real_team": "Australia",
+    "credits": 6,
+    "fantasy_points": 35,
+    "recent_form": 6.2
+  },
+  {
+    "id": 120,
+    "name": "Piyush Nair",
+    "role": "bowler",
+    "real_team": "India",
+    "credits": 8,
+    "fantasy_points": 46,
+    "recent_form": 4.8
+  },
+  {
+    "id": 121,
+    "name": "Nitin Tiwari",
+    "role": "bowler",
+    "real_team": "India",
+    "credits": 9,
+    "fantasy_points": 40,
+    "recent_form": 8.3
+  },
+  {
+    "id": 122,
+    "name": "Amit Gupta",
+    "role": "allrounder",
+    "real_team": "India",
+    "credits": 10,
+    "fantasy_points": 76,
+    "recent_form": 3.0
+  },
+  {
+    "id": 123,
+    "name": "Sunil Saxena",
+    "role": "bowler",
+    "real_team": "India",
+    "credits": 11,
+    "fantasy_points": 71,
+    "recent_form": 8.9
+  },
+  {
+    "id": 124,
+    "name": "Ryan Thomas",
+    "role": "batter",
+    "real_team": "Australia",
+    "credits": 9,
+    "fantasy_points": 54,
+    "recent_form": 3.1
+  },
+  {
+    "id": 125,
+    "name": "Nathan Wilson",
+    "role": "allrounder",
+    "real_team": "Australia",
+    "credits": 11,
+    "fantasy_points": 75,
+    "recent_form": 5.2
+  },
+  {
+    "id": 126,
+    "name": "Connor Thomas",
+    "role": "batter",
+    "real_team": "Australia",
+    "credits": 10,
+    "fantasy_points": 72,
+    "recent_form": 7.7
+  },
+  {
+    "id": 127,
+    "name": "Marcus Harris",
+    "role": "batter",
+    "real_team": "Australia",
+    "credits": 6,
+    "fantasy_points": 48,
+    "recent_form": 6.5
+  },
+  {
+    "id": 128,
+    "name": "Piyush Gupta",
+    "role": "bowler",
+    "real_team": "India",
+    "credits": 6,
+    "fantasy_points": 52,
+    "recent_form": 7.3
+  },
+  {
+    "id": 129,
+    "name": "Nathan Thomas",
+    "role": "allrounder",
+    "real_team": "Australia",
+    "credits": 6,
+    "fantasy_points": 39,
+    "recent_form": 8.0
+  },
+  {
+    "id": 130,
+    "name": "Josh Hazlewood",
+    "role": "bowler",
+    "real_team": "Australia",
+    "credits": 10,
+    "fantasy_points": 80,
+    "recent_form": 8.2
+  },
+  {
+    "id": 131,
+    "name": "Scott Boland",
+    "role": "bowler",
+    "real_team": "Australia",
+    "credits": 7,
+    "fantasy_points": 55,
+    "recent_form": 6.8
+  },
+  {
+    "id": 132,
+    "name": "Umesh Yadav",
+    "role": "bowler",
+    "real_team": "India",
+    "credits": 6,
+    "fantasy_points": 50,
+    "recent_form": 6.2
+  },
+  {
+    "id": 133,
+    "name": "Ajay Kapoor",
+    "role": "batter",
+    "real_team": "India",
+    "credits": 5,
+    "fantasy_points": 28,
+    "recent_form": 10.0
+  },
+  {
+    "id": 134,
+    "name": "Nitin Mishra",
+    "role": "wicketkeeper",
+    "real_team": "India",
+    "credits": 8,
+    "fantasy_points": 54,
+    "recent_form": 6.7
+  },
+  {
+    "id": 135,
+    "name": "Rahul Agarwal",
+    "role": "bowler",
+    "real_team": "India",
+    "credits": 8,
+    "fantasy_points": 49,
+    "recent_form": 6.6
+  },
+  {
+    "id": 136,
+    "name": "Noah Lewis",
+    "role": "batter",
+    "real_team": "Australia",
+    "credits": 10,
+    "fantasy_points": 57,
+    "recent_form": 7.0
+  },
+  {
+    "id": 137,
+    "name": "James Wright",
+    "role": "wicketkeeper",
+    "real_team": "Australia",
+    "credits": 9,
+    "fantasy_points": 50,
+    "recent_form": 6.4
+  },
+  {
+    "id": 138,
+    "name": "Alex King",
+    "role": "bowler",
+    "real_team": "Australia",
+    "credits": 7,
+    "fantasy_points": 62,
+    "recent_form": 8.2
+  },
+  {
+    "id": 139,
+    "name": "Ajay Reddy",
+    "role": "bowler",
+    "real_team": "India",
+    "credits": 6,
+    "fantasy_points": 49,
+    "recent_form": 3.9
+  },
+  {
+    "id": 140,
+    "name": "Mitchell Swepson",
+    "role": "bowler",
+    "real_team": "Australia",
+    "credits": 5,
+    "fantasy_points": 35,
+    "recent_form": 5.0
+  },
+  {
+    "id": 141,
+    "name": "Hugo Walker",
+    "role": "bowler",
+    "real_team": "Australia",
+    "credits": 11,
+    "fantasy_points": 76,
+    "recent_form": 3.8
+  },
+  {
+    "id": 142,
+    "name": "Matt White",
+    "role": "allrounder",
+    "real_team": "Australia",
+    "credits": 12,
+    "fantasy_points": 81,
+    "recent_form": 4.9
+  },
+  {
+    "id": 143,
+    "name": "Manish Reddy",
+    "role": "batter",
+    "real_team": "India",
+    "credits": 10,
+    "fantasy_points": 75,
+    "recent_form": 8.3
+  },
+  {
+    "id": 144,
+    "name": "Deepak Mishra",
+    "role": "bowler",
+    "real_team": "India",
+    "credits": 6,
+    "fantasy_points": 32,
+    "recent_form": 8.0
+  },
+  {
+    "id": 145,
+    "name": "Tom Wilson",
+    "role": "wicketkeeper",
+    "real_team": "Australia",
+    "credits": 12,
+    "fantasy_points": 83,
+    "recent_form": 7.7
+  },
+  {
+    "id": 146,
+    "name": "Vishal Nair",
+    "role": "bowler",
+    "real_team": "India",
+    "credits": 8,
+    "fantasy_points": 67,
+    "recent_form": 7.5
+  },
+  {
+    "id": 147,
+    "name": "Ravi Bhatt",
+    "role": "batter",
+    "real_team": "India",
+    "credits": 11,
+    "fantasy_points": 60,
+    "recent_form": 4.3
+  },
+  {
+    "id": 148,
+    "name": "Tom Hall",
+    "role": "wicketkeeper",
+    "real_team": "Australia",
+    "credits": 5,
+    "fantasy_points": 20,
+    "recent_form": 2.7
+  },
+  {
+    "id": 149,
+    "name": "Sam Wilson",
+    "role": "bowler",
+    "real_team": "Australia",
+    "credits": 9,
+    "fantasy_points": 50,
+    "recent_form": 6.9
+  },
+  {
+    "id": 150,
+    "name": "Jake Lewis",
+    "role": "wicketkeeper",
+    "real_team": "Australia",
+    "credits": 8,
+    "fantasy_points": 53,
+    "recent_form": 4.1
+  },
+  {
+    "id": 151,
+    "name": "Josh Inglis",
+    "role": "wicketkeeper",
+    "real_team": "Australia",
+    "credits": 7,
+    "fantasy_points": 55,
+    "recent_form": 6.8
+  },
+  {
+    "id": 152,
+    "name": "Rishabh Pant",
+    "role": "wicketkeeper",
+    "real_team": "India",
+    "credits": 10,
+    "fantasy_points": 78,
+    "recent_form": 8.5
+  },
+  {
+    "id": 153,
+    "name": "Sanjay Chauhan",
+    "role": "bowler",
+    "real_team": "India",
+    "credits": 11,
+    "fantasy_points": 67,
+    "recent_form": 8.0
+  },
+  {
+    "id": 154,
+    "name": "Ravi Reddy",
+    "role": "allrounder",
+    "real_team": "India",
+    "credits": 10,
+    "fantasy_points": 63,
+    "recent_form": 8.6
+  },
+  {
+    "id": 155,
+    "name": "Daniel Clark",
+    "role": "batter",
+    "real_team": "Australia",
+    "credits": 10,
+    "fantasy_points": 66,
+    "recent_form": 7.7
+  },
+  {
+    "id": 156,
+    "name": "Amit Kapoor",
+    "role": "allrounder",
+    "real_team": "India",
+    "credits": 6,
+    "fantasy_points": 29,
+    "recent_form": 7.3
+  },
+  {
+    "id": 157,
+    "name": "Varun Saxena",
+    "role": "batter",
+    "real_team": "India",
+    "credits": 9,
+    "fantasy_points": 55,
+    "recent_form": 1.0
+  },
+  {
+    "id": 158,
+    "name": "Adam Brown",
+    "role": "allrounder",
+    "real_team": "Australia",
+    "credits": 12,
+    "fantasy_points": 73,
+    "recent_form": 7.5
+  },
+  {
+    "id": 159,
+    "name": "Luke King",
+    "role": "batter",
+    "real_team": "Australia",
+    "credits": 7,
+    "fantasy_points": 49,
+    "recent_form": 8.8
+  },
+  {
+    "id": 160,
+    "name": "Sachin Gupta",
+    "role": "wicketkeeper",
+    "real_team": "India",
+    "credits": 9,
+    "fantasy_points": 63,
+    "recent_form": 7.8
+  },
+  {
+    "id": 161,
+    "name": "Gaurav Singh",
+    "role": "allrounder",
+    "real_team": "India",
+    "credits": 7,
+    "fantasy_points": 51,
+    "recent_form": 8.1
+  },
+  {
+    "id": 162,
+    "name": "Max Jones",
+    "role": "batter",
+    "real_team": "Australia",
+    "credits": 11,
+    "fantasy_points": 70,
+    "recent_form": 3.3
+  },
+  {
+    "id": 163,
+    "name": "Daniel Smith",
+    "role": "batter",
+    "real_team": "Australia",
+    "credits": 9,
+    "fantasy_points": 56,
+    "recent_form": 2.2
+  },
+  {
+    "id": 164,
+    "name": "Vijay Gupta",
+    "role": "batter",
+    "real_team": "India",
+    "credits": 12,
+    "fantasy_points": 84,
+    "recent_form": 5.3
+  },
+  {
+    "id": 165,
+    "name": "Arjun Rao",
+    "role": "batter",
+    "real_team": "India",
+    "credits": 11,
+    "fantasy_points": 75,
+    "recent_form": 5.3
+  },
+  {
+    "id": 166,
+    "name": "Ravichandran Ashwin",
+    "role": "allrounder",
+    "real_team": "India",
+    "credits": 9,
+    "fantasy_points": 75,
+    "recent_form": 8.0
+  },
+  {
+    "id": 167,
+    "name": "Vijay Kumar",
+    "role": "allrounder",
+    "real_team": "India",
+    "credits": 7,
+    "fantasy_points": 59,
+    "recent_form": 6.3
+  },
+  {
+    "id": 168,
+    "name": "Marcus Stoinis",
+    "role": "allrounder",
+    "real_team": "Australia",
+    "credits": 7,
+    "fantasy_points": 55,
+    "recent_form": 6.5
+  },
+  {
+    "id": 169,
+    "name": "Yash Tiwari",
+    "role": "bowler",
+    "real_team": "India",
+    "credits": 11,
+    "fantasy_points": 80,
+    "recent_form": 6.8
+  },
+  {
+    "id": 170,
+    "name": "Daniel Jones",
+    "role": "allrounder",
+    "real_team": "Australia",
+    "credits": 6,
+    "fantasy_points": 29,
+    "recent_form": 3.2
+  },
+  {
+    "id": 171,
+    "name": "Mitchell Starc",
+    "role": "bowler",
+    "real_team": "Australia",
+    "credits": 11,
+    "fantasy_points": 88,
+    "recent_form": 9.0
+  },
+  {
+    "id": 172,
+    "name": "Navdeep Saini",
+    "role": "bowler",
+    "real_team": "India",
+    "credits": 5,
+    "fantasy_points": 38,
+    "recent_form": 5.5
+  },
+  {
+    "id": 173,
+    "name": "Connor King",
+    "role": "allrounder",
+    "real_team": "Australia",
+    "credits": 8,
+    "fantasy_points": 45,
+    "recent_form": 6.1
+  },
+  {
+    "id": 174,
+    "name": "Ryan Walker",
+    "role": "bowler",
+    "real_team": "Australia",
+    "credits": 7,
+    "fantasy_points": 33,
+    "recent_form": 7.3
+  },
+  {
+    "id": 175,
+    "name": "Oscar Hall",
+    "role": "bowler",
+    "real_team": "Australia",
+    "credits": 11,
+    "fantasy_points": 77,
+    "recent_form": 5.4
+  },
+  {
+    "id": 176,
+    "name": "Pranav Reddy",
+    "role": "batter",
+    "real_team": "India",
+    "credits": 12,
+    "fantasy_points": 77,
+    "recent_form": 6.3
+  },
+  {
+    "id": 177,
+    "name": "Sam Martin",
+    "role": "batter",
+    "real_team": "Australia",
+    "credits": 6,
+    "fantasy_points": 42,
+    "recent_form": 7.1
+  },
+  {
+    "id": 178,
+    "name": "Arjun Kapoor",
+    "role": "wicketkeeper",
+    "real_team": "India",
+    "credits": 6,
+    "fantasy_points": 22,
+    "recent_form": 7.2
+  },
+  {
+    "id": 179,
+    "name": "Dylan Thomas",
+    "role": "batter",
+    "real_team": "Australia",
+    "credits": 6,
+    "fantasy_points": 26,
+    "recent_form": 3.9
+  },
+  {
+    "id": 180,
+    "name": "Mohammed Siraj",
+    "role": "bowler",
+    "real_team": "India",
+    "credits": 10,
+    "fantasy_points": 78,
+    "recent_form": 8.0
+  },
+  {
+    "id": 181,
+    "name": "Steve Smith",
+    "role": "batter",
+    "real_team": "Australia",
+    "credits": 11,
+    "fantasy_points": 90,
+    "recent_form": 8.8
+  },
+  {
+    "id": 182,
+    "name": "Sam Thomas",
+    "role": "batter",
+    "real_team": "Australia",
+    "credits": 8,
+    "fantasy_points": 46,
+    "recent_form": 5.4
+  },
+  {
+    "id": 183,
+    "name": "Oscar Lewis",
+    "role": "batter",
+    "real_team": "Australia",
+    "credits": 9,
+    "fantasy_points": 63,
+    "recent_form": 4.1
+  },
+  {
+    "id": 184,
+    "name": "James Walker",
+    "role": "batter",
+    "real_team": "Australia",
+    "credits": 6,
+    "fantasy_points": 43,
+    "recent_form": 6.6
+  },
+  {
+    "id": 185,
+    "name": "Jake Martin",
+    "role": "bowler",
+    "real_team": "Australia",
+    "credits": 10,
+    "fantasy_points": 63,
+    "recent_form": 4.5
+  },
+  {
+    "id": 186,
+    "name": "Dinesh Reddy",
+    "role": "wicketkeeper",
+    "real_team": "India",
+    "credits": 10,
+    "fantasy_points": 59,
+    "recent_form": 4.6
+  },
+  {
+    "id": 187,
+    "name": "Varun Yadav",
+    "role": "bowler",
+    "real_team": "India",
+    "credits": 10,
+    "fantasy_points": 71,
+    "recent_form": 7.1
+  },
+  {
+    "id": 188,
+    "name": "Cameron Green",
+    "role": "batter",
+    "real_team": "Australia",
+    "credits": 7,
+    "fantasy_points": 58,
+    "recent_form": 7.0
+  },
+  {
+    "id": 189,
+    "name": "Dylan Hall",
+    "role": "batter",
+    "real_team": "Australia",
+    "credits": 6,
+    "fantasy_points": 50,
+    "recent_form": 6.5
+  },
+  {
+    "id": 190,
+    "name": "Finn Anderson",
+    "role": "bowler",
+    "real_team": "Australia",
+    "credits": 6,
+    "fantasy_points": 43,
+    "recent_form": 4.8
+  },
+  {
+    "id": 191,
+    "name": "Alex Clark",
+    "role": "allrounder",
+    "real_team": "Australia",
+    "credits": 10,
+    "fantasy_points": 80,
+    "recent_form": 6.7
+  },
+  {
+    "id": 192,
+    "name": "Dev Sinha",
+    "role": "bowler",
+    "real_team": "India",
+    "credits": 5,
+    "fantasy_points": 39,
+    "recent_form": 7.1
+  },
+  {
+    "id": 193,
+    "name": "Sanju Samson",
+    "role": "wicketkeeper",
+    "real_team": "India",
+    "credits": 8,
+    "fantasy_points": 60,
+    "recent_form": 7.0
+  },
+  {
+    "id": 194,
+    "name": "Adam Young",
+    "role": "allrounder",
+    "real_team": "Australia",
+    "credits": 12,
+    "fantasy_points": 82,
+    "recent_form": 5.4
+  },
+  {
+    "id": 195,
+    "name": "Pranav Saxena",
+    "role": "bowler",
+    "real_team": "India",
+    "credits": 12,
+    "fantasy_points": 78,
+    "recent_form": 5.1
+  },
+  {
+    "id": 196,
+    "name": "Nathan Clark",
+    "role": "batter",
+    "real_team": "Australia",
+    "credits": 10,
+    "fantasy_points": 68,
+    "recent_form": 5.6
+  },
+  {
+    "id": 197,
+    "name": "Sam Clark",
+    "role": "wicketkeeper",
+    "real_team": "Australia",
+    "credits": 7,
+    "fantasy_points": 55,
+    "recent_form": 2.2
+  },
+  {
+    "id": 198,
+    "name": "Raj Nair",
+    "role": "bowler",
+    "real_team": "India",
+    "credits": 6,
+    "fantasy_points": 22,
+    "recent_form": 3.8
+  },
+  {
+    "id": 199,
+    "name": "Shardul Thakur",
+    "role": "bowler",
+    "real_team": "India",
+    "credits": 7,
+    "fantasy_points": 58,
+    "recent_form": 7.0
+  },
+  {
+    "id": 200,
+    "name": "Pradeep Saxena",
+    "role": "bowler",
+    "real_team": "India",
+    "credits": 6,
+    "fantasy_points": 52,
+    "recent_form": 8.4
+  }
+]
